@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" href="src/public/site-logo/fav-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>AdvaMed</title>
 </head>
 <body>
@@ -19,7 +23,7 @@
                         </div>
                     </a>
                     <div class="nav-tab">
-                        <a href="#" class="no-decoration">
+                        <a href="#" class="no-decoration active">
                             <div class="nav-button">
                                 <p>
                                     Home
@@ -74,12 +78,12 @@
         </div>
 
         <!-- Nav-bar -->
-
+        <!-- Hero Slider -->
         <div class="hero-container">
             <div class="page-cover">
                 <div class="hero">
                     <div class="slide">
-                        <div class="half-div">
+                        <div class="half-div" data-aos="fade-right"  data-aos-duration="1000">
                             <h1 class="hero-title">
                                 HIPAA compliant
                                 Medical Billing
@@ -96,13 +100,373 @@
                             </p>
                         </a>
                         </div>
-                        <div class="half-div">
+                        <div class="half-div" data-aos="fade-left" data-aos-duration="1000">
                             <img src="src/public/images/hero-doctor.png" class="hero-img" alt="hero-img">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+         <!-- Hero Slider -->
+          <!-- Medical Info -->
+          <div class="medicaol-info-container" >
+            <div class="page-cover">
+                <div class="medical-info" >
+                    <div class="doctor-image-holder">
+                        <img src="src/public/images/doctors.png" class="doctor-image" alt="doctor-image">
+                    </div>
+                    <div class="medical-text-holder">
+                        <h1 class="medical-title">
+                            Medical Billing and
+                        
+                            Coding Company
+                        </h1>
+                        <br>
+
+                        <p class="medical-subtitle">
+                            We are a trusted Medical Billing and Coding company dedicated to helping healthcare providers streamline their revenue cycle, reduce administrative burden, and maximize reimbursements. With deep industry expertise and a commitment to accuracy, compliance, and efficiency, we handle everything from claim submissions to coding audits — all while ensuring full <strong>HIPAA compliance</strong> . Whether you're a small clinic or a large healthcare network, our services are tailored to fit your needs and keep your practice running smoothly.
+                        </p>
+                        <br>
+                        <div class="button-holder">
+                              <a href="#" class="no-decoration primary-button">
+                            <p>
+                                REQUEST A DEMO
+                            </p>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>  
+          <!-- Medical Info -->
+           <!-- Services -->
+            <div class="services-container"  >
+                <div class="page-cover">
+                    <div class="services">
+                        <h1 class="section-heading">
+                            Comprehensive Healthcare Management Services
+                        </h1>
+                        <div class="grid-3x" >
+                            <a href="#" class="no-decoration">
+                            <div class="service-card">
+                                <div class="service-card-image-holder">
+                                    <img src="src/public/Icons/Medical Coding.png" class="service-card-image" alt="service-1">
+                                </div>
+                                <div class="service-card-text">
+                                    <h2 class="service-card-title">
+                                        Medical Coding
+                                    </h2>
+                                    <P class="service-card-subtitle">
+                                        Accurate, compliant coding by certified 
+                                        experts to reduce denials and maximize 
+                                        reimbursement. More ->
+                                    </P>
+                                </div>
+                            </div>
+                            </a>
+
+                             <a href="#" class="no-decoration">
+                            <div class="service-card">
+                                <div class="service-card-image-holder">
+                                    <img src="src/public/Icons/medical-billing.png" class="service-card-image" alt="service-1">
+                                </div>
+                                <div class="service-card-text">
+                                    <h2 class="service-card-title">
+                                        Medical Billing
+                                    </h2>
+                                    <P class="service-card-subtitle">
+                                        Accurate, compliant coding by certified 
+                                        experts to reduce denials and maximize 
+                                        reimbursement. More ->
+                                    </P>
+                                </div>
+                            </div>
+                            </a>
+                 
+                               <a href="#" class="no-decoration">
+                            <div class="service-card">
+                                <div class="service-card-image-holder">
+                                    <img src="src/public/Icons/virtual-doctor.png" class="service-card-image" alt="service-1">
+                                </div>
+                                <div class="service-card-text">
+                                    <h2 class="service-card-title">
+                                        Virtual Patient Care Counter
+                                    </h2>
+                                    <P class="service-card-subtitle">
+                                    Accurate, compliant coding by certified 
+                                    experts to reduce denials and maximize 
+                                    reimbursement. More ->
+
+
+                                    </P>
+                                </div>
+                            </div>
+                            </a>
+
+                              <a href="#" class="no-decoration">
+                            <div class="service-card">
+                                <div class="service-card-image-holder">
+                                    <img src="src/public/Icons/revenue.png" class="service-card-image" alt="service-1">
+                                </div>
+                                <div class="service-card-text">
+                                    <h2 class="service-card-title">
+                                        Revenue Cycle Managment
+                                    </h2>
+                                    <P class="service-card-subtitle">
+                                        Accurate, compliant coding by certified 
+                                        experts to reduce denials and maximize 
+                                        reimbursement. More ->
+                                    </P>
+                                </div>
+                            </div>
+                            </a>
+
+                            <a href="#" class="no-decoration">
+                            <div class="service-card">
+                                <div class="service-card-image-holder">
+                                    <img src="src/public/Icons/analysis.png" class="service-card-image" alt="service-1">
+                                </div>
+                                <div class="service-card-text">
+                                    <h2 class="service-card-title">
+                                        Accounts Recovery Analysis
+                                    </h2>
+                                    <P class="service-card-subtitle">
+                                        Accurate, compliant coding by certified 
+                                        experts to reduce denials and maximize 
+                                        reimbursement. More ->
+                                    </P>
+                                </div>
+                            </div>
+                            </a>
+
+                            
+                            <a href="#" class="no-decoration">
+                            <div class="service-card">
+                                <div class="service-card-image-holder">
+                                    <img src="src/public/Icons/management.png" class="service-card-image" alt="service-1">
+                                </div>
+                                <div class="service-card-text">
+                                    <h2 class="service-card-title">
+                                        Practice Management Solutions
+                                    </h2>
+                                    <P class="service-card-subtitle">
+                                        Accurate, compliant coding by certified 
+                                        experts to reduce denials and maximize 
+                                        reimbursement. More ->
+                                    </P>
+                                </div>
+                            </div>
+                            </a>
+
+                               <a href="#" class="no-decoration">
+                            <div class="service-card">
+                                <div class="service-card-image-holder">
+                                    <img src="src/public/Icons/medical-equipment.png" class="service-card-image" alt="service-1">
+                                </div>
+                                <div class="service-card-text">
+                                    <h2 class="service-card-title">
+                                        Durable Medical Equipment
+                                    </h2>
+                                    <P class="service-card-subtitle">
+                                        Accurate, compliant coding by certified 
+                                        experts to reduce denials and maximize 
+                                        reimbursement. More ->
+                                    </P>
+                                </div>
+                            </div>
+                            </a>
+                    </div>
+                    <a href="#" class="no-decoration primary-button">
+                        <p>
+                            View All
+                        </p>
+                    </a>
+                </div>
+            </div>
+           <!-- Services -->
+            <!-- Banner slider -->
+            <div class="slider-container" >
+                    <div class="banner-slider">
+                        <div class="banner" style="background-image: url('src/public/images/banner01.png');">
+                            <div class="page-cover">
+                                <div class="slide-content">
+                                    <h1 class="banner-title">
+                                        Experience the AdvaMed 
+                                        Advantage
+                                    </h1>
+                                    <br>
+                                    <p class="banner-subtitle">
+                                        At AdvaMed Solutions, we don’t believe in one-size-fits-all. Our team of industry professionals works closely with you to deliver tailored healthcare management solutions that scale with your growth. Whether you're a solo practitioner or a multi-specialty group, we bring deep expertise, cutting-edge technology, and unwavering commitment to compliance. The result? A streamlined back office, faster reimbursements, and a stronger bottom line — all with less stress and more control.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!-- Banner slider -->
+
+            <!-- Request a demo -->
+                <div class="demo-container" >
+                    <div class="page-cover">
+                        <div class="demo-wrapper">
+                            <div class="demo-tab">
+                                <h1 class="demo-title">
+                                    Experience Stress-Free 
+                                    Medical Billing with a 
+                                    HIPAA-Compliant 
+                                    Partner
+                                </h1>
+                                <p class="demo-subtitle">
+                                    Discover how our expert billing solutions can optimize your revenue cycle, reduce claim denials, and let you focus on patient care. Request a personalized demo today — no pressure, just results.
+                                </p>
+                            </div>
+                            <div class="demo-form-holder">
+                                <form class="demo-form">
+                                    <h1 class="section-heading">
+                                        Request a Demo
+                                    </h1>
+                                    <div class="form-tab">
+                                        <input type="text" placeholder="Name" class="form-input" required id="name" name="name">
+                                        <input type="text" placeholder="Business Name" class="form-input" required id="businessname" name="businessname">
+                                    </div>
+                                    <div class="form-tab">
+                                        <input type="email" placeholder="Email" class="form-input" required id="email" name="email">
+                                        <input type="text" placeholder="Phone Number" class="form-input" required id="number" name="number">
+                                    </div>
+                                    <div class="form-tab">
+                                        <select name="provisers" id="provisers" class="form-input" required>
+                                            <option >Number of Provisers</option>
+                                            <option value="">Provisers</option>
+                                            <option value="">Provisers</option>
+                                            <option value="">Provisers</option>
+                                        </select>
+                                        <input type="text" placeholder="Total AR" class="form-input" required id="ar" name="ar">
+                                    </div>
+                                    <div class="form-tab">
+                                       <textarea name="message" id="message"  rows="10" placeholder="Message" class="form-textarea"></textarea>
+                                    </div>
+                                    <div class="form-tab">
+                                      <button type="submit" class="primary-button">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            <!-- Request a demo -->
+
+            <!-- footer -->
+                <div class="footer-container" >
+                    <div class="page-cover">
+                        <div class="footer">
+                            <div class="grid-4x">
+                                <div class="footer-tab">
+                                    <h1 class="footer-title">
+                                        AdvaMed Solutions
+                                    </h1>
+                                    <br>
+                                    <p class="footer-subtitle">
+                                        AdvaMed Solutions is a trusted leader in healthcare support services, offering end-to-end solutions for medical billing, coding, and practice management. With a deep understanding of the healthcare industry and a commitment to HIPAA compliance, we empower providers to streamline operations.
+                                    </p>
+                                </div>
+                                <div class="footer-tab">
+                                    <h1 class="footer-title">
+                                        Our Services
+                                    </h1>
+                                    <br> 
+                                    <a href="#" class="no-decoration footer-subtitle">Medical Billing</a>
+                                    <a href="#" class="no-decoration footer-subtitle">Medical Coding</a>
+                                    <a href="#" class="no-decoration footer-subtitle">Practice Management</a>
+                                    <a href="#" class="no-decoration footer-subtitle">Durable Medical Equipment</a>
+                                    <a href="#" class="no-decoration footer-subtitle">Practice Management Solutions</a>
+                                    <a href="#" class="no-decoration footer-subtitle">Durable Medical Equipment (DME)</a>
+                                </div>
+                                <div class="footer-tab">
+                                    <h1 class="footer-title">
+                                        About Us
+                                    </h1>
+                                    <br> 
+                                    <a href="#" class="no-decoration footer-subtitle">Our Company</a>
+                                    <a href="#" class="no-decoration footer-subtitle">Our Team</a>
+                                    <a href="#" class="no-decoration footer-subtitle">Practice Management</a>
+                                    <a href="#" class="no-decoration footer-subtitle">Terms and Conditions</a>
+                                    <a href="#" class="no-decoration footer-subtitle">Privacy Policy</a>
+                                </div>
+                                <div class="footer-tab">
+                                    <h1 class="footer-title">
+                                        Contact Us
+                                    </h1>
+                                    <br> 
+                                    <p class="footer-subtitle">
+                                        USA Office:
+                                        <br>
+                                        4843 west Royal lane 
+                                        Irving tx 75063
+                                        <br>
+                                        <a href="tel:+1443527-0587" class="no-decoration footer-subtitle">
+                                            +1 443-527-0587
+                                        </a>
+
+                                    </p>
+                                    <br>
+                                    <p class="footer-subtitle">
+                                        <Strong>
+                                            Support Office:
+                                        </Strong>
+                                        <br>
+                                       Lahore Office:
+                                       <br>
+                                        Office No. 323, 3rd Floor, Siddiqui 
+                                        Trade Center, Lahore
+                                        <br>
+                                        <a href="tel:+923218828166" class="no-decoration footer-subtitle">
+                                            +92 321 8828166
+                                        </a>
+                                        <br>
+                                        <a href="tel:+923024278947 " class="no-decoration footer-subtitle">
+                                            +92 302 4278947 
+                                        </a>
+                                        <br>
+                                        <a href="tel:+923225175795" class="no-decoration footer-subtitle">
+                                            +92 322 5175795  
+                                        </a>
+
+                                    </p>
+                                    <div class="map">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.101252371257!2d-97.013939!3d32.921923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c2a2c26ba694f%3A0x453034867ca4dd6f!2s4843%20W%20Royal%20Ln%2C%20Irving%2C%20TX%2075063%2C%20USA!5e0!3m2!1sen!2s!4v1748516918287!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                      
+                        </div>
+                            
+                    </div>
+                      <div class="social-container">
+                                
+                            <div class="socials">
+                                <a href="#" class="no-decoration social-button">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="no-decoration social-button">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="#" class="no-decoration social-button">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="#" class="no-decoration social-button">
+                                    <i class="fa-brands fab fa-youtube"></i>
+                                </a>
+                            </div>
+                    </div>
+                </div>        
+            <!-- footer -->
     </div>
+
+
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
