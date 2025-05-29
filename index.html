@@ -460,13 +460,26 @@
                     </div>
                 </div>        
             <!-- footer -->
-    </div>
+             <div class="cookies" id="cookies">
+                <p class="cookies-text">
+                    AdvaMed uses cookies. Read our Cookies Notice.
+                </p>
+                <button class="primary-button" onclick="hideCookies()">Accept</button>
+                <button class="primary-button" onclick="hideCookies()">Reject</button>
+             </div>
+            </div>
 
 
 
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+
+  <script>
+    function hideCookies(){
+        document.getElementById("cookies").style.display = "none";
+    }
   </script>
 </body>
 </html>

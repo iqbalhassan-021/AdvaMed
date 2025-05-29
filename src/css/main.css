@@ -293,7 +293,7 @@
     transition: all 0.3s ease-in-out;
     color: #3674b5;
     background-color: white;
-    border: 1px solid #3674b5;
+    border: 3px solid #3674b5;
 }
 .nav-button:hover{
     transition: all 0.3s ease-in-out;
@@ -468,7 +468,7 @@
 
     background-color: #a1e3f9;
 
-    padding: 20px;
+    padding: 10px;
 }
 .socials{
     height: 100%;
@@ -496,4 +496,33 @@
     border: 1px solid #3674b5;
     color: #3674b5;
     cursor: pointer
+}
+.cookies{
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    background-color: white;
+    position: sticky;
+    bottom: 0px;
+   
+    padding: 10px;
+    z-index: 10;
+
+    transition: all 0.3s ease-in-out;
+}
+.cookies-text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+.cookies button{
+    height: 40px;
+    width: 150px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
 }
