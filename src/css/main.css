@@ -526,3 +526,46 @@
     border: none;
     cursor: pointer;
 }
+.social-button i{
+    font-size: 25px;
+}
+.service-icon{
+    width: 400px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-subimage{
+    max-height: 200px;
+}
+.terms-container{
+    height: auto;
+    width: 100%;
+
+}
+.terms{
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+.terms h3 {
+      font-size: 20px;
+      margin-top: 24px;
+      color: #1a1a1a;
+      font-family: 'Archive', sans-serif;
+    }
+
+    .terms p {
+      margin: 12px 0;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 18px;
+    }
+   .terms ul {
+      margin: 10px 0 20px 20px;
+    }
