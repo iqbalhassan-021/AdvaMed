@@ -17,12 +17,15 @@
         <div class="header">
             <div class="page-cover">
                 <div class="nav-bar">
-                    <a href="/" class="no-decoration">
-                        <div class="nav-tab logo-holder">
-                            <img src="../../src/public/site-logo/AdvaMed_logo_trans.png" class="site-logo" alt="AdvaMed">
+                    <a  class="no-decoration logo-holder">
+                        <div class="nav-tab ">
+                            <img src="../public/site-logo/AdvaMed_logo_trans.png" class="site-logo" alt="AdvaMed">
+                        </div>
+                        <div class="nav-tab" id="bars" onclick="showNav()">
+                            <i class="fa-solid fa-bars bars" id="bars"></i>
                         </div>
                     </a>
-                    <div class="nav-tab">
+                    <div class="nav-tab nav-button-holder" id="navbuttons">
                         <a href="/" class="no-decoration ">
                             <div class="nav-button">
                                 <p>
@@ -38,7 +41,7 @@
                             </div>
                         </a>
                         <a href="./Contact.html" class="no-decoration">
-                            <div class="nav-button active">
+                            <div class="nav-button ">
                                 <p>
                                     Contact Us
                                 </p>
@@ -53,7 +56,7 @@
                         </a>
                   
                     </div>
-                    <div class="nav-tab">
+                    <div class="nav-tab nav-button-holder">
                         <a href="./RequestDemo.html" class="no-decoration primary-button rounded">
                             <p>
                                 REQUEST A DEMO
@@ -113,7 +116,7 @@
                 <p>We retain data only as long as necessary to fulfill the purposes outlined in this policy unless a longer retention period is required by law.</p>
 
                 <h3>8. Your Rights</h3>
-                <p>You may have rights under applicable data protection laws to access, correct, or delete your personal data. Please contact us at <a href="mailto:privacy@advamedsolutions.com">privacy@advamedsolutions.com</a> for any requests.</p>
+                <p>You may have rights under applicable data protection laws to access, correct, or delete your personal data. Please contact us at <a href="mailto:info@advamedsolutions.com">	info@advamedsolutions.com</a> for any requests.</p>
 
                 <h3>9. Cookies and Tracking</h3>
                 <p>Our site uses cookies to enhance user experience. You can choose to accept or reject cookies using the banner at the bottom of the page.</p>
@@ -255,6 +258,16 @@
   <script>
     function hideCookies(){
         document.getElementById("cookies").style.display = "none";
+    }
+  </script>
+    <script>
+    function showNav(){
+        let nav = document.getElementById('navbuttons');
+        if (nav.style.display === "none") {
+            nav.style.display = "flex";
+        } else {
+            nav.style.display = "none";
+        }
     }
   </script>
 </body>

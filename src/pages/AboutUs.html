@@ -17,12 +17,15 @@
         <div class="header">
             <div class="page-cover">
                 <div class="nav-bar">
-                    <a href="/" class="no-decoration">
-                        <div class="nav-tab logo-holder">
+                    <a  class="no-decoration logo-holder">
+                        <div class="nav-tab ">
                             <img src="../public/site-logo/AdvaMed_logo_trans.png" class="site-logo" alt="AdvaMed">
                         </div>
+                        <div class="nav-tab" id="bars" onclick="showNav()">
+                            <i class="fa-solid fa-bars bars" id="bars"></i>
+                        </div>
                     </a>
-                    <div class="nav-tab">
+                    <div class="nav-tab nav-button-holder" id="navbuttons">
                         <a href="/" class="no-decoration ">
                             <div class="nav-button">
                                 <p>
@@ -53,7 +56,7 @@
                         </a>
  
                     </div>
-                    <div class="nav-tab">
+                    <div class="nav-tab nav-button-holder">
                         <a href="./RequestDemo.html" class="no-decoration primary-button rounded">
                             <p>
                                 REQUEST A DEMO
@@ -65,36 +68,57 @@
         </div>
 
         <!-- Nav-bar -->
-        <!-- Hero Slider -->
-        <div class="hero-container">
-            <div class="page-cover">
-                <div class="hero">
-                    <div class="slide">
-                        <div class="half-div" data-aos="fade-right"  data-aos-duration="1000">
-                            <h1 class="hero-title">
-                                HIPAA compliant
-                                Medical Billing
-                                Company
-                            </h1>
-                            <p class="hero-subtitle">
-                                We don’t just talk privacy — we live it. Our platform is fully <strong>HIPAA compliant</strong>, built to keep your personal health information locked down, encrypted, and under your control.
-                            </p>
-                            <br>
-                            <br>
-                        <a href="#" class="no-decoration primary-button rounded">
-                            <p>
-                                REQUEST A DEMO
-                            </p>
-                        </a>
-                        </div>
-                        <div class="half-div" data-aos="fade-left" data-aos-duration="1000">
-                            <img src="..//public/images/hero-doctor.png" class="hero-img" alt="hero-img">
-                        </div>
-                    </div>
-                </div>
-            </div>
+              <!-- Hero Slider -->
+<div class="hero-slider">
+  <div class="page-cover">
+    <div class="slider-track">
+
+        <!-- Slide 1 -->
+        <div class="slide">
+        <div class="half-div">
+            <h1 class="hero-title">
+            HIPAA compliant<br>
+            Medical Billing<br>
+            Company
+            </h1>
+            <p class="hero-subtitle">
+            We don’t just talk privacy — we live it. Our platform is fully <strong>HIPAA compliant</strong>,
+            built to keep your personal health information locked down, encrypted, and under your control.
+            </p>
+            <br><br>
+            <a href="src/pages/RequestDemo.html" class="no-decoration primary-button rounded">
+            <p>REQUEST A DEMO</p>
+            </a>
         </div>
-         <!-- Hero Slider -->
+        <div class="half-div">
+            <img src="../public/images/hero-doctor.png" class="hero-img" alt="hero-img">
+        </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide">
+        <div class="half-div">
+            <h1 class="hero-title">
+            Transparent<br>
+            Medical Billing<br>
+            Solutions
+            </h1>
+            <p class="hero-subtitle">
+            Streamlined workflows. <strong>Accurate billing</strong>. Total visibility into your claims — so you stay in control.
+            </p>
+            <br><br>
+            <a href="src/pages/RequestDemo.html" class="no-decoration primary-button rounded">
+            <p>REQUEST A DEMO</p>
+            </a>
+        </div>
+        <div class="half-div">
+            <img src="../public/images/doctors.png" class="hero-img" alt="hero-img">
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- End Hero Slider -->
           <!-- Medical Info -->
           <div class="medicaol-info-container" >
             <div class="page-cover">
@@ -252,6 +276,16 @@
   <script>
     function hideCookies(){
         document.getElementById("cookies").style.display = "none";
+    }
+  </script>
+    <script>
+    function showNav(){
+        let nav = document.getElementById('navbuttons');
+        if (nav.style.display === "none") {
+            nav.style.display = "flex";
+        } else {
+            nav.style.display = "none";
+        }
     }
   </script>
 </body>

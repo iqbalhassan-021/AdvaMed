@@ -17,12 +17,15 @@
         <div class="header">
             <div class="page-cover">
                 <div class="nav-bar">
-                    <a href="/" class="no-decoration">
-                        <div class="nav-tab logo-holder">
-                            <img src="../../src/public/site-logo/AdvaMed_logo_trans.png" class="site-logo" alt="AdvaMed">
+                    <a  class="no-decoration logo-holder">
+                        <div class="nav-tab ">
+                            <img src="../public/site-logo/AdvaMed_logo_trans.png" class="site-logo" alt="AdvaMed">
+                        </div>
+                        <div class="nav-tab" id="bars" onclick="showNav()">
+                            <i class="fa-solid fa-bars bars" id="bars"></i>
                         </div>
                     </a>
-                    <div class="nav-tab">
+                    <div class="nav-tab nav-button-holder" id="navbuttons">
                         <a href="/" class="no-decoration ">
                             <div class="nav-button">
                                 <p>
@@ -51,8 +54,9 @@
                                 </p>
                             </div>
                         </a>
+                  
                     </div>
-                    <div class="nav-tab">
+                    <div class="nav-tab nav-button-holder">
                         <a href="#" class="no-decoration primary-button rounded">
                             <p>
                                 REQUEST A DEMO
@@ -64,6 +68,7 @@
         </div>
 
         <!-- Nav-bar -->
+       
 
                     <!-- Request a demo -->
                 <div class="demo-container" >
@@ -81,7 +86,7 @@
                                 </p>
                             </div>
                             <div class="demo-form-holder">
-                                <form class="demo-form">
+                                <form class="demo-form"  action="mailto:info@advamedsolutions.com" method="POST" enctype="text/plain">
                                     <h1 class="section-heading">
                                         Request a Demo
                                     </h1>
@@ -233,6 +238,16 @@
   <script>
     function hideCookies(){
         document.getElementById("cookies").style.display = "none";
+    }
+  </script>
+    <script>
+    function showNav(){
+        let nav = document.getElementById('navbuttons');
+        if (nav.style.display === "none") {
+            nav.style.display = "flex";
+        } else {
+            nav.style.display = "none";
+        }
     }
   </script>
 </body>
